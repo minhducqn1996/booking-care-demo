@@ -1,0 +1,75 @@
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+border: 1px solid #ddd;
+padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #04AA6D;
+color: white;
+}
+
+.btn-pencil {
+    width: 50px;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: orange;
+}
+
+.btn-trash {
+    width: 50px;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: red;
+}
+
+.modal-user-container {
+    button.close {
+        background: transparent;
+        border: none;
+        outline: none;
+
+        span {
+            color: white;
+            font-size: 25px;
+        }
+    }
+
+    .modal-body-user {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+
+            input {
+                outline: none;
+                border-radius: 3px;
+                border: 1px solid gray;
+                height: 30px;
+                padding: 0 10px;
+            }
+
+            &.max-width-input {
+                width: 100%;
+            }
+        }
+    }
+}
